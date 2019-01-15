@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileButton : MonoBehaviour {
+// this allows us to use the scene loading function
+using UnityEngine.SceneManagement;
+public class TitleButton : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // called when title button is clicked
+	public void GoToTitle()
+    {
+        // return to title scene
+        SceneManager.LoadScene("TitleScreen");
+    }
 }
