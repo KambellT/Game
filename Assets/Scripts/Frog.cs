@@ -70,6 +70,7 @@ public class Frog : MonoBehaviour
         LayerMask groundLayerMask = LayerMask.GetMask("Ground");
         // Ask the player's collider if we are touching the LayerMask
         bool touchingGround = playerCollider.IsTouchingLayers(groundLayerMask);
+        playerAnimator.SetBool("touchingGround", touchingGround); 
 
         bool jumpButtonPressed = Input.GetButtonDown(jumpButton);
         if (jumpButtonPressed == true && touchingGround == true)

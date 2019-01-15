@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonStart : MonoBehaviour {
+// this allows us to see the scene loading function
+using UnityEngine.SceneManagement;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class ButtonStart : MonoBehaviour
+{
+
+    // this will be called by the Button component when the button is clicked
+    public void StartGame()
+    {
+        // reset the score
+        PlayerPrefs.DeleteKey("score");
+
+        // reset the lives
+        PlayerPrefs.DeleteKey("lives");
+
+        // load the first level
+        SceneManager.LoadScene("Level1");
+    }
 }
