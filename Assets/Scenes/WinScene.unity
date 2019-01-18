@@ -739,6 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071480467}
   - component: {fileID: 1071480469}
+  - component: {fileID: 1071480470}
   - component: {fileID: 1071480468}
   m_Layer: 5
   m_Name: Highscores
@@ -806,6 +807,21 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071480466}
   m_CullTransparentMesh: 0
+--- !u!114 &1071480470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071480466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac81bf62916d5734495c677836d875b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreDisplays:
+  - {fileID: 216235467}
+  - {fileID: 1855225333}
+  - {fileID: 15581340}
 --- !u!1 &1275255814
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +994,7 @@ GameObject:
   - component: {fileID: 1615605418}
   - component: {fileID: 1615605420}
   - component: {fileID: 1615605419}
+  - component: {fileID: 1615605421}
   m_Layer: 5
   m_Name: Score-Text
   m_TagString: Untagged
@@ -1043,6 +1060,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1615605417}
   m_CullTransparentMesh: 0
+--- !u!114 &1615605421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615605417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a0f8727d949c349894042684d6e471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1615605419}
 --- !u!1 &1714392146
 GameObject:
   m_ObjectHideFlags: 0
