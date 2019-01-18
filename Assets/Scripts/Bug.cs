@@ -30,7 +30,7 @@ public class Bug : MonoBehaviour
     //      If the player touched us, the coin should vanish and score go up
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the thing we touched was the Player
+        // Check if the thing we touched was the Frog
         Frog playerScript = collision.collider.GetComponent<Frog>();
 
         // If the thing we touched HAS a player script, that means
